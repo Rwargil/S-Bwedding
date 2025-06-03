@@ -103,8 +103,10 @@ body::before {
     }
     .fade-in {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 1s ease-out, transform 1s ease-out;
+      transform: translateY(100px) scale(0.95);
+      transition: opacity 2.5s ease-out, transform 2.5s ease-out;
+      transition-delay: 0.3s;
+      will-change: opacity, transform;
     }
     .fade-in.visible {
       opacity: 1;
@@ -122,6 +124,7 @@ body::before {
 </header>
   
     <hr style="border: none; border-top: 2px solid #fff; width: 80%; margin: 0 auto 2rem auto;" />
+<div style="text-align: center; font-size: 2.5rem; color: #e0f7fa; font-family: 'Great Vibes', cursive; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); margin-bottom: 3rem;">13.09.2025</div>
 
   
 
